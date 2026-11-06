@@ -1,0 +1,36 @@
+TIIDA MULTIMEDIA 2010 - LAUNCHER PARA ANDROID (version 1.0)
+
+QUE HACE
+- Es una app Android que funciona como pantalla de inicio de tu estereo.
+- Musica: muestra y controla lo que suene en cualquier app (Spotify, el reproductor del estereo, etc.): titulo, artista, portada, barra de avance, anterior/play/siguiente.
+- Mapa: mapa dentro del launcher (OpenStreetMap), tu posicion por GPS, busqueda de destino y ruta con distancia y tiempo. "Guiar con Google Maps" abre la navegacion con voz.
+- Android Auto y CarPlay: el boton abre ZLink con un toque. ZLink es otra app y ocupa toda la pantalla; con el boton Home del estereo regresas al launcher.
+- Aplicaciones: lista todas las apps instaladas.
+- Volumen: controla el volumen real del sistema.
+- Viaje: velocidad y kilometros por GPS.
+
+COMO OBTENER EL APK (no necesitas instalar nada en tu computadora)
+1. Crea una cuenta gratis en github.com y un repositorio nuevo (privado esta bien).
+2. Sube TODO el contenido de esta carpeta (incluida la carpeta oculta .github) al repositorio.
+3. Entra a la pestana "Actions". La compilacion arranca sola (o pulsa "Compilar APK" > "Run workflow").
+4. Cuando termine (3 a 6 minutos), abre la ejecucion y descarga "tiida-launcher-apk". Dentro esta app-debug.apk.
+5. Copia app-debug.apk a una memoria USB. En el estereo, abrelo desde el administrador de archivos e instalalo (permite "fuentes desconocidas" si lo pide).
+
+PRIMERA VEZ EN EL ESTEREO
+1. Abre la app "Tiida Multimedia". Acepta el permiso de ubicacion.
+2. En Musica toca "Dar acceso a la musica" y activa "Tiida Multimedia" en la lista de acceso a notificaciones.
+3. Para usarla como pantalla de inicio, pulsa Home y elige "Tiida Multimedia" con "Solo esta vez". No elijas "Siempre" hasta estar seguro.
+4. Si ya elegiste "Siempre" y quieres volver al original: Ajustes del estereo > Aplicaciones > Tiida Multimedia > "Borrar valores predeterminados".
+
+SEGUIR EDITANDO SIN RECOMPILAR
+Cuando te entregue un index.html nuevo, copialo a la memoria USB y pegalo en la carpeta de la app del estereo:
+   Android/data/mx.luis.tiida/files/index.html
+(la carpeta aparece despues de abrir la app una vez). Cierra y vuelve a abrir la app. Para volver a la version incluida, borra ese archivo.
+
+NO PROBADO TODAVIA
+Esta version no se ha compilado ni instalado en un estereo real. Si la compilacion falla o algo no responde, copia el mensaje de error y se corrige.
+
+LIMITES
+- ZLink no se puede incrustar dentro de este launcher: abre aparte.
+- El mapa y la busqueda necesitan internet (hotspot del telefono). Sin internet el mapa no carga.
+- El kilometraje total del carro y la velocidad real del carro requieren un lector OBD2 (siguiente etapa).
